@@ -612,6 +612,7 @@ body {
 }
 
 .input-email {
+    all: unset;
     border: none;
     width: 450px;
     height: 45px;
