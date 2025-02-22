@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    width: 100%;
+    max-width: 100%;
 }
 .main{
     width: 100%;
@@ -65,12 +65,12 @@ body {
     z-index: -99;
 }
 
-
 .banner{
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-evenly;
 }
 .banner-left{
     display: flex;
@@ -106,18 +106,23 @@ body {
     flex-direction: column;
     margin: 50px 80px;
     margin-left: 20px;
-
-    position: absolute;
-    right: 0;
+    position: relative;
 }
+@media (max-width: 1500px){
+    .banner-right{
+        right: 200px;
+    }
+}
+
 .women_picture{
+    position: relative;
     z-index: -99;
 }
 .heart_picture{
-    position: absolute;
+    position: relative;
     width: 100px;
-    top: 0;
-    right: 0;
+    left: 550px;
+    bottom: 700px;
 }
 .banner-right-info{
     display: flex;
@@ -290,6 +295,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    gap: 10%;
 }
 
 .achievements-header{
@@ -701,9 +707,3 @@ body {
     display: flex;
     gap: 30px;
 }
-
-
-
-
-
-
