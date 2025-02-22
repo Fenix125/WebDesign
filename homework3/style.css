@@ -348,7 +348,7 @@ body {
     transition: box-shadow 0.6s ease-in-out;
 }
 .achievements-block:hover{
-    box-shadow: 0px 20px 100px rgba(190, 188, 97, 0.3); /* Stronger shadow on hover */
+    box-shadow: 0px 20px 100px rgba(190, 188, 97, 0.3);
 }
 .achievements-name {
     font-size: 24px;
@@ -439,6 +439,15 @@ body {
     border: none;
     border-radius: 10px;
     padding: 15px 18px;
+    transition: background 0.5s ease;
+}
+.slider-btn-left:hover{
+    background-color:  darkorange;
+
+}
+.slider-btn-right:hover{
+    background-color: darkorange;
+
 }
 
 .reviews-container {
@@ -460,8 +469,7 @@ body {
     background-color: white;
     border-radius: 8px;
     padding: 70px 30px;
-    padding-bottom: 10px
-
+    padding-bottom: 10px;
 }
 
 .reviewer-name{
@@ -525,8 +533,12 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 20px;
 }
-
+.dish:hover{
+    transform: translateY(-10px);
+}
 
 .dish-name {
     font-size: 24px;
